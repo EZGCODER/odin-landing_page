@@ -1,0 +1,23 @@
+/* comment */
+body {
+    height: 100vh;
+    margin: 0; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 100px;
+}
