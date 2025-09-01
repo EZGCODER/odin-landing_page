@@ -5,19 +5,64 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    font-family: 'roboto, Times New Roman', Times, serif;
     justify-content: space-between;
 }
+.top {
+    background-color: #1f2937;
 
+}
 .header {
+    background-color: #1f2937;
+    color: #e5e7eb;
     display: flex;
-    flex-wrap: wrap;
+    flex: 0 1 auto; 
+    align-items: baseline;
 }
 
-.links{
-    display: flex;
-    flex-wrap: wrap;
+.logo{
+    margin-right: auto;
 }
 
-img {
-    width: 100px;
+.nav {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+}
+
+.hero-image img {
+    width: 10%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.call-to-action {
+    background-color: #3882f6;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
 }
