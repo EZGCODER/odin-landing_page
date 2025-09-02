@@ -6,7 +6,7 @@
 body {
     height: 100vh;
     margin: 0; 
-    overflow: scroll;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     font-family: 'roboto, Times New Roman', Times, serif;
@@ -34,6 +34,8 @@ main {
 html {
     --side-width-standard: 20px;
     --side-width-smaller: 40px;
+
+    --column-maxwidth: 850px
 }
 
 
@@ -73,13 +75,23 @@ html {
     color: #1f2937;
 }
 
+/* Design Style */
+
+.white-border {
+    border: 2px solid #e5e7eb;
+}
+
+.margin-right {
+    margin-right: auto;
+}
+
 /* COMPONENTS */
 
 .button {
     display: inline-block;
     background-color: var(--buttonblue);
-    margin-right: auto;
-    padding: 12px 20px;
+    color: #f9faf8;
+    padding: 6px 18px;
     border-radius: 5px;
 }
 
@@ -88,7 +100,7 @@ html {
     /*Padding spot to make the side column gaps i think?*/
     padding: 5px var(--side-width-standard) 1vh;
     width: 98%;
-    max-width: 850px;  
+    max-width: var(--column-maxwidth);  
     display: flex;
     flex: 0 1 auto; 
     align-items: baseline;  
@@ -121,7 +133,7 @@ main {
     padding: var(--side-width-standard);
     width: 98%;
     margin: auto;
-    max-width: 850px;
+    max-width: var(--column-maxwidth); 
 }
 
 .side-width-smaller {
@@ -163,7 +175,7 @@ a {
 .hero-text {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: start;
 }
 
 /* INFO*/
@@ -199,15 +211,26 @@ blockquote {
     font-weight: bold;
 }
 
+/* CALL TO ACTION */
 
-
-
-
-/* pause
-.call-to-action {
-    background-color: #3882f6;
+.action-background {
+    background-color: var(--buttonblue);
+    border-radius: 5px;
 }
-*/
+
+.action-container {
+    display: flex;
+    margin: var(--side-width-smaller);
+    align-items: center;
+    padding: 20px;
+}
+
+
+.action-text {
+    color: #f9faf8;
+    margin-right: auto;
+}
+
 
 /*FOOT*/
 .footer {
